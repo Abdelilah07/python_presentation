@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const ProgressBar = ({ currentSlide, totalSlides }) => {
@@ -10,7 +9,7 @@ const ProgressBar = ({ currentSlide, totalSlides }) => {
         className="progress-bar"
         initial={{ width: 0 }}
         animate={{ width: `${percentage}%` }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
       />
     </div>
   );

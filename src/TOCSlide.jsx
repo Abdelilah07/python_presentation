@@ -3,25 +3,25 @@ import { motion } from 'framer-motion';
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
+  visible: { opacity: 1, y: 0 },
 };
 
 const TOCSlide = () => (
-  <motion.div 
+  <motion.div
     initial="hidden"
     animate="visible"
     variants={{
-      visible: { transition: { staggerChildren: 0.1 } }
+      visible: { transition: { staggerChildren: 0.1 } },
     }}
     className="h-full flex flex-col p-8"
   >
-    <motion.h2 
+    <motion.h2
       variants={itemVariants}
       className="text-3xl font-bold text-gray-900 dark:text-white mb-8"
     >
       Table of Contents
     </motion.h2>
-    
+
     <div className="grid grid-cols-2 gap-x-12 gap-y-4">
       <motion.div variants={itemVariants} className="space-y-6">
         <div className="space-y-3">
@@ -124,7 +124,7 @@ const TOCSlide = () => (
       </motion.div>
     </div>
 
-    <motion.div 
+    <motion.div
       variants={itemVariants}
       className="mt-8 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg"
     >
@@ -134,5 +134,4 @@ const TOCSlide = () => (
     </motion.div>
   </motion.div>
 );
-
 export default TOCSlide;
