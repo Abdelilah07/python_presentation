@@ -228,7 +228,9 @@ const slides = [
             alt="Automation Flowchart"
             className="w-full h-full p-5"
         /> */}
-    <Workflow className="w-full h-full p-5" />
+    <motion.div variants={itemVariants} className="w-full h-full p-5">
+      <Workflow />
+    </motion.div>
   </motion.div>,
 
   // Slide 6: Data Processing
