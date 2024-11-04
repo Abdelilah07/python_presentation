@@ -229,7 +229,7 @@ const slides = [
             className="w-full h-full p-5"
         /> */}
     <motion.div variants={itemVariants} className="w-full h-full p-5">
-      <Workflow />
+      <Workflow className="w-full h-full" />
     </motion.div>
   </motion.div>,
 
